@@ -1,0 +1,73 @@
+src/main/java/com/cg/KanbanBoardApplication.java:16:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/cg/KanbanBoardApplication.java:18:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/KanbanBoardApplication.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/KanbanBoardApplication.java:24:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/config/Swagger2UIConfig.java:20:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/cg/config/Swagger2UIConfig.java:23:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/config/Swagger2UIConfig.java:32:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/controller/UserController.java:25:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/cg/controller/UserController.java:27:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/controller/UserController.java:30:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/controller/UserController.java:35:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/controller/UserController.java:52:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/controller/UserController.java:63:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/controller/UserController.java:68:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/entity/User.java:11:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/cg/entity/User.java:15:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/entity/User.java:17:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/entity/User.java:18:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/entity/User.java:19:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/entity/User.java:20:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/entity/User.java:21:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/entity/User.java:22:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/entity/User.java:23:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/entity/User.java:27:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/entity/User.java:33:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/entity/User.java:81:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/entity/User.java:85:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/entity/User.java:89:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/entity/User.java:93:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/exception/ErrorInfo.java:4:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/cg/exception/ErrorInfo.java:6:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/exception/ErrorInfo.java:7:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/exception/ErrorInfo.java:8:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/exception/ErrorInfo.java:11:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/exception/GlobalExceptionHandler.java:19:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/cg/exception/GlobalExceptionHandler.java:23:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/exception/GlobalExceptionHandler.java:32:	ControlStatementBraces:	ControlStatementBraces: This statement should have braces
+src/main/java/com/cg/exception/GlobalExceptionHandler.java:41:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/exception/UserNotFoundException.java:3:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/cg/exception/UserNotFoundException.java:4:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/repository/UserRepository.java:12:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/cg/repository/UserRepository.java:21:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/serviceImpl/UserServiceImpl.java:1:	PackageCase:	PackageCase: Package name contains upper case characters
+src/main/java/com/cg/serviceImpl/UserServiceImpl.java:21:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/cg/serviceImpl/UserServiceImpl.java:23:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/serviceImpl/UserServiceImpl.java:25:	CommentRequired:	CommentRequired: Field comments are required
+src/main/java/com/cg/serviceImpl/UserServiceImpl.java:28:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/service/UserService.java:10:	CommentRequired:	CommentRequired: Class comments are required
+src/main/java/com/cg/service/UserService.java:12:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/service/UserService.java:13:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/service/UserService.java:14:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/main/java/com/cg/service/UserService.java:15:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/controllertest/UserControllerTest.java:22:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/cg/controllertest/UserControllerTest.java:24:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/cg/controllertest/UserControllerTest.java:27:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/cg/controllertest/UserControllerTest.java:30:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/controllertest/UserControllerTest.java:35:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/controllertest/UserControllerTest.java:68:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/controllertest/UserControllerTest.java:83:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/controllertest/UserControllerTest.java:111:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/servicetest/UserServiceImplTest.java:25:	CommentRequired:	CommentRequired: Class comments are required
+src/test/java/com/cg/servicetest/UserServiceImplTest.java:28:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/cg/servicetest/UserServiceImplTest.java:31:	CommentRequired:	CommentRequired: Field comments are required
+src/test/java/com/cg/servicetest/UserServiceImplTest.java:34:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/servicetest/UserServiceImplTest.java:39:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/servicetest/UserServiceImplTest.java:57:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/servicetest/UserServiceImplTest.java:76:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/servicetest/UserServiceImplTest.java:87:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/servicetest/UserServiceImplTest.java:105:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/servicetest/UserServiceImplTest.java:132:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/servicetest/UserServiceImplTest.java:143:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/servicetest/UserServiceImplTest.java:161:	CommentRequired:	CommentRequired: Public method and constructor comments are required
+src/test/java/com/cg/test/KanbanBoardApplicationTests.java:8:	CommentRequired:	CommentRequired: Class comments are required

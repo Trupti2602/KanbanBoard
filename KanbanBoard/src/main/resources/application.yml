@@ -1,0 +1,22 @@
+#eureka:
+#    instance:
+#        hostname: localhost
+#logging:
+#    file:
+#        name: usermodule.log
+#        path: .
+#server:
+#    port: 9090
+#spring:
+#    application:
+#        name: user-service
+#    datasource:
+#        driver-class-name: org.postgresql.Driver
+#        password: trupti26
+#        url: jdbc:postgresql://localhost:5432/postgres
+#        username: postgres
+#    jpa:
+#        generate-ddl: true
+#        hibernate:
+#            ddl-auto: create
+#        show-sql: true

@@ -46,19 +46,18 @@ public class UserControllerTest {
         Assertions.assertEquals(HttpStatus.CREATED, response.getStatusCode());
         Assertions.assertEquals(user, response.getBody());
     }
+    @Test
+    public void testLoginUserWithValidCredentials() throws UserNotFoundException {
+        // Mock the userService.loginUser() method to return successfully
+        Mockito.when(userService.loginUser(Mockito.anyString(), Mockito.anyString())).thenReturn("Login successful");
 
-//    @Test
-//    public void testLoginUserWithValidCredentials() throws UserNotFoundException {
-//        // Mock the userService.loginUser() method to not throw UserNotFoundException
-//        Mockito.doNothing().when(userService).loginUser(Mockito.anyString(), Mockito.anyString());
-//
-//        // Call the loginUser method of the userController with valid credentials
-//        ResponseEntity<String> response = userController.loginUser("john@example.com", "password");
-//
-//        // Assert that the response status is HttpStatus.OK
-//        Assertions.assertEquals(HttpStatus.OK, response.getStatusCode());
-//        Assertions.assertEquals("Login successful", response.getBody());
-//    }
+        // Call the loginUser method of the userController with valid credentials
+        ResponseEntity<String> response = userController.loginUser("john@example.com", "password");
+
+        // Assert that the response status is HttpStatus.OK
+        Assertions.assertEquals(HttpStatus.OK, response.getStatusCode());
+        Assertions.assertEquals("Login successful", response.getBody());
+    }
 
     @Test
     public void testLoginUserWithInvalidCredentials() throws UserNotFoundException {
@@ -115,18 +114,17 @@ public class UserControllerTest {
         Assertions.assertEquals(user, response.getBody());
     }
 
-//    @Test
-//    public void testGetUserByIdWithInvalidId() throws UserNotFoundException {
-//        // Mock the userService.getUserById() method to throw UserNotFoundException
-//        Mockito.doThrow(UserNotFoundException.class)
-//                .when(userService)
-//                .getUserById(Mockito.anyInt());
-//
-//        // Call the getUserById method of the userController with invalid ID
-//        ResponseEntity<User> response = userController.getUserById(1);
-//
-//        // Assert that the response status is HttpStatus.NOT_FOUND
-//        Assertions.assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
-//        Assertions.assertNull(response.getBody());
-//    }
+    @Test
+    public void testGetUserByIdWithInvalidId() throws UserNotFoundException {
+        // Mock the userService.getUserById() method to throw UserNotFoundException
+        Mockito.when(userService.getUserById(Mockito.anyInt())).thenThrow(UserNotFoundException.class);
+
+        // Call the getUserById method of the userController with invalid ID
+        ResponseEntity<User> response = userController.getUserById(1);
+
+        // Assert that the response status is HttpStatus.NOT_FOUND
+        Assertions.assertEquals(HttpStatus.NOT_FOUND, response.getStatusCode());
+        Assertions.assertNull(response.getBody());
+    }
+
 }

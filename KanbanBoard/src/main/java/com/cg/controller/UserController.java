@@ -50,6 +50,16 @@ public class UserController {
     }
 
     
+//    @PostMapping("/login")
+//    public ResponseEntity<String> loginUser(@RequestParam("emailId") String emailId,
+//                                            @RequestParam("password") String password) {
+//        try {
+//            userService.loginUser(emailId, password);
+//            return ResponseEntity.ok("Login successful");
+//        } catch (UserNotFoundException e) {
+//            return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid email or password");
+//        }
+//    }
     @PostMapping("/login")
     public ResponseEntity<String> loginUser(@RequestParam("emailId") String emailId,
                                             @RequestParam("password") String password) {
@@ -60,16 +70,27 @@ public class UserController {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body("Invalid email or password");
         }
     }
+
     
     @GetMapping("/reg")
     public ResponseEntity<List<User>> getAll() throws UserNotFoundException{
         return new ResponseEntity<>(userService.viewAll(), HttpStatus.OK);
     }
 
+//    @GetMapping("/{id}")
+//    public ResponseEntity<User> getUserById(@PathVariable int id) throws UserNotFoundException {
+//        User user = userService.getUserById(id);
+//        return new ResponseEntity<>(user, HttpStatus.OK);
+//    }
+
     @GetMapping("/{id}")
-    public ResponseEntity<User> getUserById(@PathVariable int id) throws UserNotFoundException {
-        User user = userService.getUserById(id);
-        return new ResponseEntity<>(user, HttpStatus.OK);
+    public ResponseEntity<User> getUserById(@PathVariable int id) {
+        try {
+            User user = userService.getUserById(id);
+            return new ResponseEntity<>(user, HttpStatus.OK);
+        } catch (UserNotFoundException e) {
+            return ResponseEntity.status(HttpStatus.NOT_FOUND).body(null);
+        }
     }
 
 }
